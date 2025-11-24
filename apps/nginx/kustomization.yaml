@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 resources:
   - deployment.yaml
   - service.yaml
+=======
+resources:
+  - deployment.yaml
+  - service.yaml
+>>>>>>> d0adeb5b5df50e42e204661f305d6a65e830d8f8

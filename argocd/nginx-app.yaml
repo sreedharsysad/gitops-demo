@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
@@ -16,3 +17,23 @@ spec:
     automated:
       prune: true
       selfHeal: true
+=======
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: nginx-app
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/sreedharsysad/gitops-demo.git
+    targetRevision: main
+    path: apps/nginx
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: web
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+>>>>>>> d0adeb5b5df50e42e204661f305d6a65e830d8f8
