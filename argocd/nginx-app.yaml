@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
@@ -17,7 +16,6 @@ spec:
     automated:
       prune: true
       selfHeal: true
-=======
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
@@ -36,4 +34,3 @@ spec:
     automated:
       prune: true
       selfHeal: true
->>>>>>> d0adeb5b5df50e42e204661f305d6a65e830d8f8
